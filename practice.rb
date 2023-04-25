@@ -27,3 +27,12 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+
+user = [ben, brian, evan, anthony]
+
+
+
+puts "Ben's KelloggCoin balance is"
+puts "Brian's KelloggCoin balance is" 
+puts "Evan's KelloggCoin balance is" 
+puts "Anthony's KelloggCoin balance is" 
