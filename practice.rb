@@ -28,11 +28,30 @@ blockchain = [
 
 # 👇👇👇 Your code HERE 👇👇👇
 
-user = [ben, brian, evan, anthony]
+# create hash/dictionary to keep track of users balance
+
+users = ["ben", "brian", "evan", "anthony"]
+
+for user in users
+
+# Initialize the balance to 0
+balance = 0
+
+# Loop through each transaction in the blockchain
+for transaction in blockchain
+
+# If the from_user is the current user, subtract the amount from their balance
+if transaction ["from_user"] == user
+  balance -= transaction["amount"]
+
+  # If the to_user is the current user, add the amount to their balance
+elsif transaction["to_user"] == user
+  balance += transaction["amount"]
+end
+end
 
 
+# Print out the user's name and their KelloggCoin balance
+puts "#{user.capitalize}'s KelloggCoin balance is #{balance}"
 
-puts "Ben's KelloggCoin balance is"
-puts "Brian's KelloggCoin balance is" 
-puts "Evan's KelloggCoin balance is" 
-puts "Anthony's KelloggCoin balance is" 
+end
